@@ -1,0 +1,64 @@
+foosballers = [
+  "Mia",
+  "Retta",
+  "Augustine",
+  "Jin",
+  "Waylon",
+  "Alphonso",
+  "Sage",
+  "Hubert",
+  "Raymon",
+  "Rebecca",
+  "Monty",
+  "Glen",
+  "Christi",
+  "Patrice",
+  "Craig",
+  "Dexter",
+  "Wally",
+  "Ian",
+  "Pat"
+]
+
+median = len(foosballers)//2
+
+print(foosballers[median])
+
+print(foosballers[7:12])
+print(foosballers[median-2:median+3])
+
+foosballers.insert(median, "average player")
+print(foosballers)
+
+
+avgPlayer = foosballers.index("average player")
+foosballers[avgPlayer]=foosballers[avgPlayer].upper()
+print(foosballers)
+
+foosballers +=[
+  "Rachel",
+  "Anthony",
+  "Rupert",
+  "Adam",
+  "Francene"
+]
+
+print(foosballers)
+
+del foosballers[foosballers.index("AVERAGE PLAYER")]
+print(foosballers)
+
+median = len(foosballers)//2
+print(foosballers[median]) 
+foosballers.insert(median, "AVERAGE PLAYER")
+print(foosballers) 
+
+Hubertindex=foosballers.index("Hubert")
+foosballers.insert(Hubertindex,"Lacy")
+
+Rebeccaindex=foosballers.index("Rebecca")
+foosballers.insert(Rebeccaindex+1,"Omar")
+
+foosballers.insert(7,"Otto")
+foosballers.insert(-10,"Chauncey")
+print(foosballers) 
